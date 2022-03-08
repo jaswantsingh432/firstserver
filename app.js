@@ -59,10 +59,10 @@ app.post("/",function(req,res){
 
 
 app.post("/failure",function(req,res){
-    res.redirect("/")
+    res.redirect("/");
 });
 
 
-app.listen(process.env.PORT || 3000,function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("Server stared on port 3000");
 })
