@@ -21,7 +21,7 @@ app.post("/",function(req,res){
     const data1 = {
         members:[
             {
-                email_address : email,
+                email_address:email,
                 status : "subscribed",
                 merge_fields:{
                     FNAME:firstName,
@@ -63,6 +63,6 @@ app.post("/failure",function(req,res){
 });
 
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT, function(){
     console.log("Server stared on port 3000");
 })
